@@ -13,8 +13,37 @@
     section{padding:100px 0}.section-head{max-width:650px;margin-bottom:44px}.section-head h2{font:500 clamp(36px,6vw,58px)/1.05 Georgia,serif;letter-spacing:-.025em;margin:12px 0 16px}.section-head p{color:var(--muted);margin:0}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.intro-art{min-height:330px;display:grid;place-items:center;position:relative;border:1px solid var(--line);background:linear-gradient(135deg,#292317,#15140f 66%);overflow:hidden}.intro-art:before,.intro-art:after{content:"";position:absolute;width:240px;height:240px;border:1px solid #e8b64f60;border-radius:50%}.intro-art:after{width:180px;height:180px}.sun-symbol{font:100px Georgia,serif;color:var(--gold);z-index:1}.intro-art small{position:absolute;bottom:22px;left:24px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase;font-size:9px}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}.feature{border-top:1px solid var(--line);padding-top:14px}.feature strong{display:block;color:var(--gold);font:24px Georgia,serif}.feature span{font-size:12px;color:var(--muted)}
     .services{background:#171612}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:28px;border:1px solid var(--line);min-height:250px;background:#1b1a16}.card-num{color:var(--gold);font-size:11px;letter-spacing:.16em}.card h3{font:26px Georgia,serif;margin:28px 0 10px}.card p{color:var(--muted);font-size:14px;margin:0}.card a{display:inline-block;margin-top:20px;color:var(--gold);font-size:11px;text-decoration:none;text-transform:uppercase;letter-spacing:.12em}.offer{padding:28px 32px;background:#262116;border:1px solid #6b5229;display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:28px}.offer h3{font:26px Georgia,serif;margin:0 0 4px}.offer p{margin:0;color:var(--muted);font-size:13px}.offer-badge{flex:none;color:var(--gold);font:40px Georgia,serif}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:steps}.step{border-top:1px solid var(--line);padding-top:22px}.step:before{counter-increment:steps;content:"0" counter(steps);font-size:11px;color:var(--gold);letter-spacing:.16em}.step h3{font:22px Georgia,serif;margin:12px 0 8px}.step p{color:var(--muted);font-size:13px;margin:0}
     .contact{background:#171612}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}.contact-info p{color:var(--muted)}.contact-item{padding:18px 0;border-top:1px solid var(--line)}.contact-item span{display:block;color:var(--gold);font-size:10px;text-transform:uppercase;letter-spacing:.16em}.contact-item a,.contact-item strong{display:block;margin-top:5px;text-decoration:none;font-weight:500}.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:var(--muted);letter-spacing:.08em}.field input,.field textarea,.field select{width:100%;color:var(--cream);background:#10100e;border:1px solid var(--line);padding:12px 13px;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold)}.field textarea{min-height:125px;resize:vertical}.field select{color-scheme:dark}.form-status{grid-column:1/-1;color:var(--green);font-size:13px;min-height:20px;margin:0}.contact-form button{cursor:pointer}.site-footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:15px;align-items:center}.footer-links{display:flex;gap:20px}.footer-links a{text-decoration:none}
+    .promo-popup{position:fixed;inset:0;z-index:30;display:grid;place-items:center;padding:20px;background:#000b;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}.promo-popup.is-open{opacity:1;visibility:visible}.promo-card{position:relative;max-width:min(420px,90vw);transform:translateY(12px) scale(.98);transition:transform .25s}.promo-popup.is-open .promo-card{transform:translateY(0) scale(1)}.promo-image-link{display:block;line-height:0;box-shadow:0 20px 80px #0009}.promo-image-link img{display:block;width:100%;height:auto}.popup-close{position:absolute;top:-14px;right:-14px;width:38px;height:38px;border:1px solid #fff7;border-radius:50%;background:#171612;color:white;font-size:23px;line-height:1;cursor:pointer}.popup-hint{margin:10px 0 0;text-align:center;color:#fff;font-size:11px;text-shadow:0 1px 4px #000}
     @media(max-width:760px){.wrap{width:min(100% - 36px,600px)}.nav{height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:18px;background:#10100e;border-bottom:1px solid var(--line);flex-direction:column;gap:18px;align-items:stretch}.nav-links.open{display:flex}.nav-links a{padding:5px}.nav-links .nav-cta{text-align:center}.hero{min-height:600px}.hero:after{right:-255px;width:450px;height:450px;opacity:.65}.hero-content{padding:80px 0}.intro-grid,.contact-grid{grid-template-columns:1fr;gap:36px}.intro-art{min-height:250px;order:2}.cards{grid-template-columns:1fr}.card{min-height:0}.offer{align-items:flex-start}.steps{grid-template-columns:1fr;gap:20px}section{padding:72px 0}.contact-grid{gap:18px}}@media(max-width:480px){.brand{font-size:11px}.hero h1{font-size:60px}.hero-copy{font-size:15px}.feature-list{gap:12px}.offer{padding:22px;flex-direction:column}.offer-badge{font-size:32px}.contact-form{grid-template-columns:1fr}.field.full{grid-column:auto}.form-status{grid-column:auto}.footer-inner{align-items:flex-start;flex-direction:column}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
   </style>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18508099581"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18508099581');
+</script>
+<!-- Event snippet for Outbound click conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18508099581/4IT8CJPr758dEP3frPlE',
+      'value': 1.0,
+      'currency': 'INR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 </head>
 <body>
   <header class="site-header"><div class="wrap nav">
@@ -41,7 +70,7 @@
       <div class="steps"><article class="step"><h3>Share your idea</h3><p>Tell us what you’re planning, your preferred date and anything that matters to you.</p></article><article class="step"><h3>Make a plan</h3><p>We’ll talk through the space, timing and options, then confirm what works for everyone.</p></article><article class="step"><h3>Come create</h3><p>Arrive, settle in and enjoy your time at SUNNY. We’ll be here if you need a hand.</p></article></div>
     </div></section>
     <section class="contact" id="contact"><div class="wrap contact-grid"><div class="contact-info"><div class="section-head"><div class="eyebrow">Let’s make a plan</div><h2>What are you dreaming up?</h2><p>Send us a few details and we’ll get back to you about availability and next steps.</p></div>
-      <div class="contact-item"><span>Call or WhatsApp</span><a href="https://wa.me/919279699826" target="_blank" rel="noopener noreferrer">+91 92796 99826</a></div><div class="contact-item"><span>Email</span><a href="mailto:hello@sunnystudio.com">hello@sunnystudio.com</a></div><div class="contact-item"><span>First booking</span><strong>Ask us about your 12% welcome offer</strong></div>
+      <div class="contact-item"><span>Call or WhatsApp</span><a href="https://wa.me/919279699826" target="_blank" rel="noopener noreferrer" onclick="return gtag_report_conversion(this.href)">+91 92796 99826</a></div><div class="contact-item"><span>Email</span><a href="mailto:hello@sunnystudio.com">hello@sunnystudio.com</a></div><div class="contact-item"><span>First booking</span><strong>Ask us about your 12% welcome offer</strong></div>
     </div><form class="contact-form" id="contact-form">
       <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required placeholder="How should we address you?"></div>
       <div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
@@ -51,13 +80,28 @@
       <p class="form-status" id="form-status" role="status" aria-live="polite"></p><div class="field full"><button class="button button-primary" type="submit">Prepare your enquiry <span aria-hidden="true">&nbsp;↗</span></button></div>
     </form></div></section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-inner"><span>© <span id="year"></span> SUNNY Studio · Made for memorable moments</span><div class="footer-links"><a href="#home">Back to top ↑</a><a href="https://wa.me/919279699826" target="_blank" rel="noopener noreferrer">WhatsApp</a></div></div></footer>
+  <footer class="site-footer"><div class="wrap footer-inner"><span>© <span id="year"></span> SUNNY Studio · Made for memorable moments</span><div class="footer-links"><a href="#home">Back to top ↑</a><a href="https://wa.me/919279699826" target="_blank" rel="noopener noreferrer" onclick="return gtag_report_conversion(this.href)">WhatsApp</a></div></div></footer>
+  <div class="promo-popup" id="promo-popup" aria-hidden="true">
+    <div class="promo-card" role="dialog" aria-modal="true" aria-label="SUNNY Studio first booking offer">
+      <button class="popup-close" type="button" aria-label="Close offer popup">×</button>
+      <a class="promo-image-link" href="https://wa.me/919279699826?text=I%20WANT%20ID%20HERE.." target="_blank" rel="noopener noreferrer" aria-label="Claim the 12 percent offer on WhatsApp" onclick="return gtag_report_conversion(this.href)">
+        <img src="sunny.png" alt="Get 12% off — click to chat with SUNNY Studio on WhatsApp">
+      </a>
+      <p class="popup-hint">Tap the offer to chat with us on WhatsApp</p>
+    </div>
+  </div>
   <script>
     const menuButton=document.querySelector('.menu-toggle');
     const navigation=document.querySelector('.nav-links');
     menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!open));navigation.classList.toggle('open',!open);});
     navigation.addEventListener('click',event=>{if(event.target.closest('a')){menuButton.setAttribute('aria-expanded','false');navigation.classList.remove('open');}});
     document.getElementById('year').textContent=new Date().getFullYear();
+    const promoPopup=document.getElementById('promo-popup');
+    const closePromo=()=>{promoPopup.classList.remove('is-open');promoPopup.setAttribute('aria-hidden','true');};
+    if(!sessionStorage.getItem('sunny-offer-seen'))setTimeout(()=>{promoPopup.classList.add('is-open');promoPopup.setAttribute('aria-hidden','false');sessionStorage.setItem('sunny-offer-seen','true');},900);
+    promoPopup.querySelector('.popup-close').addEventListener('click',closePromo);
+    promoPopup.addEventListener('click',event=>{if(event.target===promoPopup)closePromo();});
+    document.addEventListener('keydown',event=>{if(event.key==='Escape')closePromo();});
     document.getElementById('contact-form').addEventListener('submit',event=>{
       event.preventDefault();
       const form=event.currentTarget;
